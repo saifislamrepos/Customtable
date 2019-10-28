@@ -1,0 +1,51 @@
+.productlist{
+    table {
+        border-collapse: collapse;
+        td,th {
+            border: 1px solid;
+            min-width: 100px;
+            text-align: left;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+        th {
+            .text {
+                margin-right: 10px;
+            }
+            .sort-ind {
+                vertical-align: middle;
+                position: relative;
+                .icons {
+                    &:before {
+                        font-size: 14px;
+                    }
+                    position: absolute;
+                    left:0;
+                    font-size: 12px;
+                    margin-left: 5px;
+                    &.icon-dir-down {
+                        top: -0.4em;
+                    }
+                    &.icon-dir-up {
+                        top: -1em;
+                    }
+                    &.normal {
+                        opacity:0.22;
+                        &:before {
+                            font-weight: normal;
+                        }
+                    }
+                }
+            }
+            &.normal {
+                .icons {
+                    opacity: 0.3;
+                }
+            }
+
+        }
+        .th ~ th{
+            color: var(--font-color);
+        }
+    }
+}

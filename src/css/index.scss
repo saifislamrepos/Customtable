@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    background: var(--theme-color);
+    color: var(--font-color);
+}
+@font-face {
+    font-family: "fontello";
+    src: url("../../resources/fonts/icons/fontello.ttf");
+    src: url("../../resources/fonts/icons/fontello.eot") format("embedded-opentype"), url("../../resources/fonts/icons/fontello.woff") format("woff"), url("../../resources/fonts/icons/fontello.ttf") format("truetype"), url("../../resources/fonts/icons/fontello.svg") format("svg");
+    font-style: normal;
+    font-weight: normal; }
+
+.icons {
+    font-family: "fontello";
+    font-style: normal;
+    &:before {
+        display: inline-block;
+    }
+}
+.input-hidden {
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+.icon-dir-down {
+    &:before {
+        content: '\E001';
+    }
+}
+.icon-angle-left {
+    &:before {
+        content: '\E002';
+    }
+}
+.icon-angle-right {
+    &:before {
+        content: '\E004';
+    }
+}
+.icon-dir-up {
+    &:before {
+        content: '\E003';
+    }
+}
+.icon-fast-fwd {
+    &:before {
+        content: '\E005';
+    }
+}
+.icon-fast-bwd {
+    &:before {
+        content: '\E006';
+    }
+}
+
+.ib {
+    display: inline-block;
+}
+.disabled {
+    opacity: 0.4;
+    pointer-events: none;
+    cursor: not-allowed;
+}
+.pr {
+    position: relative;
+}
+.abs {
+    position: absolute;
+}
+.flex {
+    display: flex;
+}

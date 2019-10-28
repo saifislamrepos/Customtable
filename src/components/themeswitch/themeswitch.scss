@@ -1,0 +1,65 @@
+.themeswitch{
+    margin-bottom: 20px;
+    .addtheme {
+        margin-left: 30px;
+    }
+    .editdet {
+        font-weight: normal;
+        padding: 10px;
+        top: 100%;
+        left:0;
+        box-shadow: 0px 0px 6px;
+        z-index: 1;
+        background: var(--theme-color);
+        color: var(--font-color);
+        border: 1px solid ;
+        label {
+            padding: 5px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .label {
+            white-space: nowrap;
+            margin-right: 5px;
+        }
+        input {
+            border: 1px solid var(--font-color);
+            padding: 5px 0;
+            background: var(--theme-color);
+            border-radius: 6px;
+            color: var(--font-color);
+            cursor: pointer;
+        }
+        input[type='color'] {
+            padding: 0;
+        }
+        .btns {
+            padding: 5px 0;
+            .reset {
+                margin-right: 10px;
+            }
+            button {
+                cursor: pointer;
+                padding: 5px 10px;
+                background: var(--theme-color);
+                color: var(--font-color);
+                border-radius: 6px;
+            }
+        }
+    }
+    button {
+        padding: 10px 15px;
+        outline: 0;
+        margin-right: 5px;
+        margin-left: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        &:hover {
+            border: 1px solid;
+        }
+        &.selected {
+            color: var(--font-color);
+            border: 2px solid #1e77ff;
+        }
+    }
+}

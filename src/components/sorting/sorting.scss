@@ -1,0 +1,37 @@
+.sorting{
+    justify-content: flex-end;
+    margin-bottom: 20px;;
+    select {
+        margin-left:5px;
+        margin-right: 10px;
+    }
+    .select-rev{
+        margin-left:5px;
+        .toggle-button {
+            background: var(--theme-color);
+            color: var(--font-color);
+            border:1px solid;
+            border-radius: 20px;
+            width: 30px;
+            height: 15px;
+            position: relative;
+            .select-circle {
+                transition: all 0.3s;
+                position: absolute;
+                width: 13px;
+                height: 13px;
+                background: var(--font-color);
+                left:1px;
+                top:50%;
+                transform: translateY(-50%);
+                border-radius: 50%;
+            }
+            &.selected {
+                background:#1e77ff;
+                .select-circle {
+                    left:16px ;
+                }
+            }
+        }
+    }
+}

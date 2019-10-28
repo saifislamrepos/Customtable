@@ -1,0 +1,21 @@
+.pagination{
+    margin-top:10px;
+    text-align: right;
+    .prev,.next {
+        cursor: pointer;
+        background: var(--theme-color);
+        color: var(--font-color);
+        padding: 5px;
+        border-radius: 5px;
+        border:1px solid
+    }
+    .prev {
+        margin-right: 5px;
+    }
+    .page {
+        margin-right: 10px;
+    }
+    .next {
+        margin-right: 5px;
+    }
+}
