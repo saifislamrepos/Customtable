@@ -1,4 +1,5 @@
 .customcell{
+    background-clip: padding-box;
     cursor: pointer;
     &:hover {
         font-weight: bold;

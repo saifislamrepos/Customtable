@@ -10,5 +10,4 @@ run the development server with hot reload
 #npm run build :
 to build the bundle for deployment
 
-#npm run create-component [componentname]
-to create react component with given name in components folder
+#node server for prod build
