@@ -15,7 +15,6 @@ class customcell extends React.Component {
                 paddingRight:15,
                 paddingTop:10,
                 paddingBottom:10,
-                borderColor: this.props.theme.fontcolor,
                 textAlign: "left"
             }
         }
